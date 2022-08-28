@@ -70,7 +70,7 @@ class TodoController extends Controller {
 
             } else {
 
-                return response()->json(['error' => true, 'message' => 'Tarefa não encontrada, verifique.'], 500); 
+                return response()->json(['error' => true, 'message' => 'Tarefa '.$id.' não encontrada, verifique.'], 500); 
 
             }
 
@@ -126,7 +126,7 @@ class TodoController extends Controller {
 
             } else {
 
-                return response()->json(['error' => true, 'message' => 'Tarefa não encontrada, verifique.'], 500); 
+                return response()->json(['error' => true, 'message' => 'Tarefa '.$id.' não encontrada, verifique.'], 500); 
 
             }
 
@@ -148,11 +148,11 @@ class TodoController extends Controller {
 
                 $todo->delete();
 
-                return response()->json(['success' => true, 'message' => 'Tarefa: '.$id.' - deletada com sucesso.'], 200); 
+                return response()->json(['success' => true, 'message' => 'Tarefa '.$id.' deletada com sucesso.'], 200); 
 
             } else {
 
-                return response()->json(['error' => true, 'message' => 'Tarefa não encontrada, verifique.'], 500); 
+                return response()->json(['error' => true, 'message' => 'Tarefa '.$id.' não encontrada, verifique.'], 500); 
 
             }
 

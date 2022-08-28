@@ -6,9 +6,9 @@ use App\Http\Controllers\TodoController;
 
 Route::prefix('v1/')->group(function() {
 
-    Route::get('ping', function() { 
+    Route::get('status', function() { 
         
-        return response()->json(['api_name' => 'apicomlaravel-b7web'], 200);
+        return response()->json(['api_name' => 'apicomlaravel-b7web', 'status' => true], 200);
 
     });
 
